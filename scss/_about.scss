@@ -1,0 +1,15 @@
+.about {
+  padding: 40px 0px;
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  @include media-sm {
+    #ieee_gbpec {
+      margin-top: 160px;
+    }
+  }
+}

@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/css/materialize.css" />
     <link rel="stylesheet" href="../dist/css/main.css" />
     <title>IEEE GBPEC</title>
   </head>
   <body>
     <div class="header">
+      <!-- header -->
       <div class="header__top">
+        <!-- icons and navigation bar -->
         <div class="header__icons">
-          <ul class="header__icon_list">
+          <a href="/" class="header__brand">
+            <img src="../icons/IEEE_GBPEC_logo_white.png" alt="" />
+          </a>
+          <!-- <ul class="header__icon_list">
             <li class="header__icon">
               <img src="../icons/facebook.png" alt="" />
             </li>
@@ -20,60 +30,303 @@
             <li class="header__icon">
               <img src="../icons/linkedin.png" alt="" />
             </li>
-          </ul>
+          </ul> -->
 
-          <a href="/" class="header__brand">
-            <img src="../icons/IEEE_GBPEC_logo_white.png" alt="" />
-          </a>
+          <span class="header__toggler"> </span>
         </div>
-        <div class="header__nav">
+        <div class="header__nav hide_nav">
           <ul class="nav">
             <li class="nav__item">
-              <a class="nav__link active" href=""
-                >Home <img src="../icons/down_arrow.png" alt=""
-              /></a>
+              <a class="nav__link active" href="#">Home </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""
-                >Events<img src="../icons/down_arrow.png" alt=""
-              /></a>
-
-              <ul class="nav__dropdown">
-                <li class="nav__d-item">
-                  <a class="nav__d-link" href="">All Events</a>
-                </li>
-                <li class="nav__d-item">
-                  <a class="nav__d-link" href="">Winners</a>
-                </li>
-              </ul>
+              <a class="nav__link" href="./events.html">Events</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""
-                >Students Portal<img src="../icons/down_arrow.png" alt=""
-              /></a>
+              <a class="nav__link" href="">Students Portal</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""
-                >Our Team<img src="../icons/down_arrow.png" alt=""
-              /></a>
+              <a class="nav__link" href="">Our Team</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""
-                >Our Journey<img src="../icons/down_arrow.png" alt=""
-              /></a>
+              <a class="nav__link" href="">Our Journey</a>
             </li>
           </ul>
         </div>
       </div>
-
-      <div>
-        <!-- add here event details -->
+      <div class="header__bottom">
+        <div class="background"></div>
+        <div class="background__heading">Explore IEEE GBPEC</div>
+        <div class="background__btn_wrapper">
+          <a href="#upcoming_events" class="background__btn">
+            <img src="../icons/eplore.png" alt="" />
+          </a>
+        </div>
       </div>
     </div>
 
-    <h1 class="comming">
-      Complete Website Coming Soon <br />
-      Stay Tuned
-    </h1>
+    <div id="upcoming_events" class="upcoming_events">
+      <!-- upcoming events section -->
+      <div class="container">
+        <div class="upcoming_events__heading">Upcoming Events</div>
+
+        <div class="upcoming_events__slider">
+          <div class="upcoming_events__slide">
+            <div id="event" class="UE_card active">
+              <div class="UE_card__date">
+                08 <br />
+
+                <span>Jan</span>
+              </div>
+
+              <div class="UE_card__name">Ideathon</div>
+              <div class="UE_card__time">2PM - 5PM</div>
+              <div class="UE_card__mode">Mode- <span>Online</span></div>
+              <div class="UE_card_manager">Nitesh - 8548632548</div>
+            </div>
+            <div class="UE_card">
+              <div class="UE_card__date">
+                08 <br />
+
+                <span>Jan</span>
+              </div>
+
+              <div class="UE_card__name">Ideathon</div>
+              <div class="UE_card__time">2PM - 5PM</div>
+              <div class="UE_card__mode">Mode- <span>Online</span></div>
+              <div class="UE_card_manager">Nitesh - 8548632548</div>
+            </div>
+            <div class="UE_card">
+              <div class="UE_card__date">
+                08 <br />
+
+                <span>Jan</span>
+              </div>
+
+              <div class="UE_card__name">Ideathon</div>
+              <div class="UE_card__time">2PM - 5PM</div>
+              <div class="UE_card__mode">Mode- <span>Online</span></div>
+              <div class="UE_card_manager">Nitesh - 8548632548</div>
+            </div>
+            <div class="UE_card">
+              <div class="UE_card__date">
+                08 <br />
+                <span>Jan</span>
+              </div>
+
+              <div class="UE_card__name">Ideathon</div>
+              <div class="UE_card__time">2PM - 5PM</div>
+              <div class="UE_card__mode">Mode- <span>Online</span></div>
+              <div class="UE_card_manager">Nitesh - 8548632548</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event_card">
+      <img src="../images/ideathon.jfif" alt="" />
+      <div class="event_card__box">
+        <h3 class="event_card__name">Ideathon</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+          architecto similique unde dolorem perferendis a sunt officiis ex
+          aspernatur. At ex iusto accusamus architecto optio quis quo maiores
+          distinctio aspernatur?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+          architecto similique unde dolorem perferendis a sunt officiis ex
+          aspernatur. At ex iusto accusamus architecto optio quis quo maiores
+          distinctio aspernatur?
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <!-- about IEEE GBPEC -->
+      <div class="about">
+        <div class="title">About Us</div>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="about__subtitle">What is IEEE</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ea
+                dolorem consectetur! Dignissimos a labore nisi tempora
+                necessitatibus ea perspiciatis tenetur, officia ad rerum
+                doloremque deleniti praesentium modi. Labore, ducimus!
+              </p>
+            </div>
+            <div id="ieee_gbpec" class="col s12 m6">
+              <div class="about__subtitle">What is IEEE GBPEC</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus culpa natus reiciendis, nisi eligendi voluptatum saepe
+                voluptatem perspiciatis optio tenetur fugit repellat,
+                exercitationem ea totam corrupti deserunt explicabo obcaecati
+                fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="counsellor">
+        <div class="title">Branch Counsellors</div>
+        <div class="container">
+          <div class="row">
+            <div
+              style="
+                align-items: center;
+                display: flex;
+                justify-content: center;
+              "
+              class="col s12 m12"
+            >
+              <div style="margin: auto" class="col s12 m7">
+                <div class="card horizontal">
+                  <div class="card-image">
+                    <img src="../images/profle.jfif" />
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat et cumque, necessitatibus illo, minus, aspernatur
+                        amet cupiditate error totam nam debitis quo aperiam
+                        dignissimos animi. Optio aliquid quos mollitia fuga.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="chapters">
+        <div class="title">Our Chapters</div>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="chapters__img">
+                <img width="150px" src="../images/wie.png" alt="" />
+              </div>
+            </div>
+            <div class="col s12 m8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                laboriosam tenetur temporibus dolor earum cum culpa! Quia
+                ratione nesciunt nobis eos inventore sit adipisci. Quibusdam
+                sequi atque placeat unde nisi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Dolore, ratione vero provident
+                reprehenderit amet velit nihil earum ab culpa, impedit pariatur
+                consequatur tempora esse tenetur enim nesciunt! Odio, quis
+                expedita.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="chapters__img">
+                <img width="150px" src="../images/IEEE_GBPEC_logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col s12 m8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                laboriosam tenetur temporibus dolor earum cum culpa! Quia
+                ratione nesciunt nobis eos inventore sit adipisci. Quibusdam
+                sequi atque placeat unde nisi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Dolore, ratione vero provident
+                reprehenderit amet velit nihil earum ab culpa, impedit pariatur
+                consequatur tempora esse tenetur enim nesciunt! Odio, quis
+                expedita.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="background: #212121" class="page-footer">
+      <div class="container">
+        <div style="display: flex; align-items: center" class="row">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+            class="col s12 m6"
+          >
+            <ul class="footer__icons">
+              <li class="footer__icon">
+                <img src="../icons/facebook.png" alt="" />
+              </li>
+              <li class="footer__icon">
+                <img src="../icons/twitter.png" alt="" />
+              </li>
+              <li class="footer__icon">
+                <img src="../icons/linkedin.png" alt="" />
+              </li>
+            </ul>
+
+            <ul class="footer__list">
+              <li class="footer__item">ieeegbpec@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col s12 m6">
+            <h5 class="white-text">Important Links</h5>
+            <ul>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  target="_blank"
+                  href="https://www.ieee.org/membership/join/index.html"
+                  >Join IEEE</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  target="_blank"
+                  href="https://www.ieee.org/membership/index.html"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  target="_blank"
+                  href="https://www.ieee.org/conferences/index.html"
+                  >Conferences</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  target="_blank"
+                  href="https://www.ieee.org/publications/index.html"
+                  >Publications</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div style="text-align: center" class="container">
+          © 2014 Copyright Text
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../materialize-src/js/bin/materialize.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

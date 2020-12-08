@@ -1,0 +1,51 @@
+.background {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.6);
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  &__heading {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+  }
+  &__btn_wrapper {
+    position: absolute;
+    bottom: 10px;
+  }
+  &__btn {
+    height: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    animation-name: animate-explore-btn;
+    animation-iteration-count: infinite;
+
+    animation-duration: 2s;
+    img {
+      height: 40px;
+    }
+  }
+}
+
+@keyframes animate-explore-btn {
+  0% {
+    transform: scale(1);
+    background-position: left;
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-position-y: -150px;
+  }
+  100% {
+    transform: scale(1);
+    background-position: right;
+
+    background-position-y: 250px;
+  }
+}
