@@ -1,0 +1,27 @@
+.counsellor {
+  padding: 40px 0px;
+  font-family: "Material Icons";
+
+  .card {
+    flex-direction: column;
+    z-index: -1;
+    @include media-sm {
+      flex-direction: row;
+    }
+  }
+  .card-image {
+    max-width: 100% !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    img {
+      height: 200px;
+      margin: auto 20px;
+      width: 200px !important;
+      border-radius: 50% !important;
+    }
+    @include media-sm {
+      max-width: 50% !important;
+    }
+  }
+}
