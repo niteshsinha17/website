@@ -6,21 +6,21 @@ $('#event').on('click',function(){
     $('.event_card').toggleClass('show_event');
 });
 
-// $('document').on('click',function(){
-    
-//     $('.event_card').removeClass('show_event');
-// });
+window.onscroll = function() {myFunction()};
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {direction: 'left'});
-    
-  });
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
 
-  // Or with jQuery
+function myFunction() {
+  if (window.pageYOffset > sticky && window.innerWidth>500) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
-  $(document).ready(function(){
-    $('.header__toggler').floatingActionButton();
-  });
+$(document).ready(function(){
+  $('.tooltipped').tooltip();
+});
 
-  $('.tabs').tabs();
+$('.tabs').tabs();

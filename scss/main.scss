@@ -29,8 +29,11 @@ a {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  @include media-sm {
+    width: 80%;
+  }
 }
 
 // .row {
@@ -76,6 +79,21 @@ footer .row {
     .row {
       align-items: center;
       display: flex;
+      flex-direction: column;
     }
   }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $primary-blue;
+  box-shadow: 0px 2px 3px #00000061;
+  padding: 20px;
+}
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

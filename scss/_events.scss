@@ -71,9 +71,12 @@
 }
 
 .event {
+  width: 270px;
   display: flex;
+  margin: auto;
   align-items: center;
   img {
+    display: none;
     width: 150px;
     flex-shrink: 0;
     height: 180px;
@@ -96,5 +99,12 @@
     border: 1px solid;
     color: rgb(29, 29, 29);
     border-radius: 4px;
+  }
+  @include media-sm {
+    width: auto;
+
+    img {
+      display: block;
+    }
   }
 }
