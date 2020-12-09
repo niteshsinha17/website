@@ -1,33 +1,32 @@
 :root {
-    --primary-blue: #00629b;
-    --secondary-blue: #404a7c;
-    --black: black;
-    --primary-gray: #ececf6;
-    --secondary-gray: #f6f6fa;
-    --organge: #e87722;
-    --red: #ed4d45;
-    --white: white;
-  }
-  /*  ------ Our Journey -------*/
-.text{
-    text-align: center;
-    font-size: 1.4rem;
-    margin: 1%;
+  --primary-blue: #00629b;
+  --secondary-blue: #404a7c;
+  --black: black;
+  --primary-gray: #ececf6;
+  --secondary-gray: #f6f6fa;
+  --organge: #e87722;
+  --red: #ed4d45;
+  --white: white;
+}
+/*  ------ Our Journey -------*/
+.text {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 1%;
 }
 
-.hov:hover{
-    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); 
-    -moz-box-shadow:    0 8px 16px 0 rgba(0, 0, 0, 0.4);  
-    box-shadow:         0 8px 16px 0 rgba(0, 0, 0, 0.4); 
-    -webkit-transition: box-shadow 0.3s ease-in-out 0s;
-    -moz-transition: box-shadow 0.3s ease-in-out 0s;
-    -o-transition: box-shadow 0.3s ease-in-out 0s;
-    -ms-transition: box-shadow 0.3s ease-in-out 0s;
-    transition: box-shadow 0.3s ease-in-out 0s;
+.hov:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: box-shadow 0.3s ease-in-out 0s;
+  -moz-transition: box-shadow 0.3s ease-in-out 0s;
+  -o-transition: box-shadow 0.3s ease-in-out 0s;
+  -ms-transition: box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s;
 }
-@media only screen
-and (max-width : 480px) {
-.pad1{
- padding-top: 70px;
-}
+@media only screen and (max-width: 480px) {
+  .pad1 {
+    margin-bottom: 20px;
+  }
 }
