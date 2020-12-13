@@ -1,9 +1,12 @@
 .counsellor {
-  font-family: "Material Icons";
-
   .card {
     flex-direction: column;
     z-index: -1;
+    .card-content {
+      p {
+        text-align: center;
+      }
+    }
     @include media-sm {
       flex-direction: row;
     }
@@ -14,8 +17,9 @@
     display: flex;
     align-items: center;
     img {
+      margin: auto;
+      margin-top: 20px;
       height: 200px;
-      margin: auto 20px;
       width: 200px !important;
       border-radius: 50% !important;
     }

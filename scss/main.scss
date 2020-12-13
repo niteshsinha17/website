@@ -52,7 +52,11 @@ html {
   color: #404a7c;
   font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+
+  @include media-sm {
+    margin-bottom: 40px;
+  }
 }
 
 .chapters {
@@ -65,11 +69,15 @@ html {
   }
   p {
     margin: 20px 0px;
+    text-align: center;
   }
   @include media-sm {
     .row {
       align-items: center;
       display: flex;
+    }
+    p {
+      text-align: left;
     }
   }
 }
@@ -96,4 +104,10 @@ footer .row {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.tabs {
+  a {
+    font-size: 13px !important;
+  }
 }
