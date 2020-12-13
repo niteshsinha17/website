@@ -5,12 +5,20 @@
 
   &__slider {
     overflow: scroll;
+    width: 80%;
+    margin: auto;
     &::-webkit-scrollbar {
       display: none;
     }
   }
   &__slide {
     display: flex;
+  }
+  @include media-sm {
+    &__slider {
+      overflow: scroll;
+      width: 100%;
+    }
   }
 }
 

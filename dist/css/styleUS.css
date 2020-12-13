@@ -1,41 +1,40 @@
 :root {
-    --primary-blue: #00629b;
-    --secondary-blue: #404a7c;
-    --black: black;
-    --primary-gray: #ececf6;
-    --secondary-gray: #f6f6fa;
-    --organge: #e87722;
-    --red: #ed4d45;
-    --white: white;
-  }
-  body {
-      background:var(--secondary-gray);
-      background-image: url('../../images/back.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      /*background: linear-gradient(to right, #0062E6, #33AEFF);*/
-  }
-  .img .responsive-img{
-    width: 100%;
-    height: auto;
-  }
-  .img{
-    height: -webkit-fill-available;
-  }
-  .card{
-    height: 44rem;
-    margin-bottom: 0%;}
-.card-content{
-  padding:10px ;
+  --primary-blue: #00629b;
+  --secondary-blue: #404a7c;
+  --black: black;
+  --primary-gray: #ececf6;
+  --secondary-gray: #f6f6fa;
+  --organge: #e87722;
+  --red: #ed4d45;
+  --white: white;
 }
-  .col .m6{
-    padding: 0%;
-  }
-  .row{
-    margin-top: 30px ;
-  }
-  .pad{
-    padding-left: 0%;
-  }
-  
-  
+body {
+  background: var(--secondary-gray);
+  background-image: url("../assests/images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: linear-gradient(to right, #0062E6, #33AEFF);*/
+}
+.img .responsive-img {
+  width: 100%;
+  height: auto;
+}
+.img {
+  height: -webkit-fill-available;
+}
+.card {
+  height: 44rem;
+  margin-bottom: 0%;
+}
+.card-content {
+  padding: 10px;
+}
+.col .m6 {
+  padding: 0%;
+}
+.row {
+  margin-top: 30px;
+}
+.pad {
+  padding-left: 0%;
+}
