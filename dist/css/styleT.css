@@ -10,7 +10,7 @@
 }
 .hexagon {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background: url("../assests/images/dummy.jpg") no-repeat;
+  background: url("../dist/assests/images/dummy.jpg") no-repeat;
   background-size: auto;
   height: 150px;
   width: 150px;
@@ -27,10 +27,11 @@
   margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 50px;
+  border: 2px solid black;
   border-radius: 10px;
   position: relative;
   width: 200px;
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   text-align: center;
 }
@@ -64,13 +65,10 @@
   margin: 0 0 20px 0;
   padding: 0 0 20px 0;
 }
-
-.t1 {
-  font-size: 1.3rem;
-}
 .r1 {
   margin-top: 60px;
 }
+
 .valign-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,6 +84,68 @@
   justify-content: center;
   align-items: center;
 }
+.collapsible li.disabled .collapsible-body {
+  display: none !important; /*or using id of the app to avoid the use of !important*/
+}
+
+.collapsible li.disabled .collapsible-header {
+  background: rgb(221,221,221);
+}
+.sect {
+  background-color: #ececf6;
+  display: flex;
+}
+.sect1{
+  background-color:#ecd6d5;
+  display: flex;
+}
+.pad1{
+  font-size: 2.7rem;
+  padding-bottom:33px ;
+}
+.te__icons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  width: 100px;
+  margin-left: +15px;
+}
+
+.footer__icon {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer__icon .img {
+  height: 18px;
+  pointer-events: none;
+  -webkit-filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+  filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+}
+.marg{
+  padding-right: 40px;
+  padding-left:40px;
+}
+.head{
+  font-size: 1.7rem;
+}
+a{
+  font-size: 15px;
+}
+
+.titleTeam {
+  text-align: center;
+  font-weight: 600;
+  color: #404a7c;
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 
 @media only screen and (max-width: 480px) {
   .card {
@@ -93,5 +153,8 @@
   }
   .pad {
     padding-top: 45px;
+  }
+  .marg{
+    padding: 15px;
   }
 }
