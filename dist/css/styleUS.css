@@ -10,10 +10,9 @@
 }
 body {
   background: var(--secondary-gray);
-  background-image: url("../assests/images/back.jpg");
+  background-image: url("../assets/images/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background: linear-gradient(to right, #0062E6, #33AEFF);*/
 }
 .img .responsive-img {
   width: 100%;

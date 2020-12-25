@@ -1,36 +1,13 @@
 .header {
-  height: 100vh;
-  &__top {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: 10%;
-    background: $primary-blue;
-  }
-  &__bottom {
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background: $primary-blue;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   &__icons {
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  &__icon_list {
-    display: none;
-    list-style: none;
-    width: 80px;
-    margin-right: 20px;
-    justify-content: space-around;
-    img {
-      height: 15px;
-    }
   }
   &__toggler {
     background: white;
@@ -66,8 +43,9 @@
   }
   .active {
     opacity: 0.7;
+    font-size: 10px;
     &::before {
-      width: 100%;
+      width: 90%;
     }
   }
 
@@ -76,7 +54,7 @@
     right: 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
-    top: 9%;
+    top: 7%;
     padding-top: 20px;
     width: 225px;
     height: 100%;
@@ -87,15 +65,13 @@
     justify-content: flex-end;
   }
   @include media-sm {
+    position: relative;
     .hide_nav {
       right: unset;
     }
     &__top {
       height: 20%;
       position: relative;
-    }
-    &__bottom {
-      height: 80%;
     }
 
     &__icon_list {
@@ -107,13 +83,13 @@
     &__nav {
       position: relative;
       right: 0;
+      z-index: 10;
       padding: inherit;
+      transition-duration: 0s;
       width: auto;
       height: auto;
+      padding: 20px 0px;
       background: transparent;
-      z-index: 0;
-
-      padding-bottom: 10px;
     }
   }
 }
@@ -144,18 +120,19 @@
   &__link {
     color: white;
     display: flex;
+    font-size: 12px;
     align-items: center;
     letter-spacing: 1px;
     text-decoration: none;
     position: relative;
 
     &::before {
-      transition-duration: 0.5s;
+      transition-duration: 0.2s;
       width: 0%;
       content: "";
       position: absolute;
       display: block;
-      height: 2px;
+      height: 1px;
       background: white;
       bottom: -2px;
     }
@@ -167,51 +144,11 @@
 
     &:hover {
       &::before {
-        width: 100%;
+        width: 90%;
       }
     }
-  }
-  &__dropdown {
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.469);
-    padding: 5px 10px;
-    list-style: none;
-    border-radius: 5px;
-    transition-duration: 0.5s;
-    left: -50%;
-    width: 100px;
-    transition-timing-function: ease-in;
-    text-align: center;
-    top: 30px;
   }
 
-  &__d-item {
-    margin: 6px 0px;
-  }
-  &__d-link {
-    text-decoration: none;
-    position: relative;
-    color: #00629b;
-    &::before {
-      transition-duration: 0.5s;
-      width: 0%;
-      left: 0;
-      content: "";
-      position: absolute;
-      display: block;
-      height: 2px;
-      background: #00629b;
-      bottom: -2px;
-    }
-    &:hover {
-      &::before {
-        width: 100%;
-      }
-    }
-  }
   &__item {
     position: relative;
 

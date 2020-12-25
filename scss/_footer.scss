@@ -28,6 +28,11 @@
 footer {
   text-align: center;
   background: #00283f !important;
+  .row {
+    @include media-sm {
+      display: flex;
+    }
+  }
 }
 
 .footer-copyright {
