@@ -1,25 +1,37 @@
-.background {
-  height: 100%;
+#background_section {
+  height: 80vh;
+  background: url("../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
   display: flex;
-  position: absolute;
-  z-index: -1;
-  filter: brightness(0.6);
-  align-items: center;
   justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
+  align-items: center;
+}
+
+.background {
   &__heading {
     font-size: 50px;
     text-align: center;
     font-weight: 700;
   }
+  &__content {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__btn_wrapper {
+    width: 100%;
     position: absolute;
     bottom: 10px;
   }
   &__btn {
     height: 60px;
+    width: 40px;
+    margin: auto;
     display: flex;
     flex-direction: column-reverse;
     animation-name: animate-explore-btn;

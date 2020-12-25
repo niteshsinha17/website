@@ -7,11 +7,12 @@ $('#event').on('click',function(){
 });
 
 window.onscroll = function() {myFunction()};
-
+var header__icons = document.querySelector('.header__icons');
 var header = document.getElementById("header");
-var sticky = header.offsetTop;
+var sticky = header__icons.offsetHeight;
 
 function myFunction() {
+  
   if (window.pageYOffset > sticky && window.innerWidth>500) {
     header.classList.add("sticky");
   } else {

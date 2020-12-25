@@ -11,7 +11,7 @@
 /*  ------ Our Journey -------*/
 .text {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 13px;
   margin: 1%;
 }
 
@@ -25,19 +25,9 @@
   -ms-transition: box-shadow 0.3s ease-in-out 0s;
   transition: box-shadow 0.3s ease-in-out 0s;
 }
-.titleJ {
-  text-align: center;
-  font-weight: 600;
-  color: #404a7c;
-  font-size: 3.7rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+
 @media only screen and (max-width: 480px) {
   .pad1 {
     margin-bottom: 20px;
-  }
-  .marg{
-    padding-top: 3rem;
   }
 }
