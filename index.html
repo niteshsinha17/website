@@ -289,6 +289,7 @@
 <script>
     $(document).ready(() => {
         $.getJSON("https://ieeegbpec.000webhostapp.com/api/home", (data) => {            
+            console.log(data)
             if (data.succ){
                 ['ieee', 'ieee_gbpec', 'chapter_wie', 'chapter_ieee_gbpec', 'counsellor_msg'].forEach((_ele) => {
                     $(`#${_ele}`).html(data.res[`${_ele}`])
