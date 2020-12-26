@@ -289,17 +289,6 @@
     
 <script>
     $(document).ready(() => {
-        $.getJSON("https://ieeegbpec.000webhostapp.com/api/home", (data) => {            
-            console.log(data)
-            if (data.succ){
-                ['ieee', 'ieee_gbpec', 'chapter_wie', 'chapter_ieee_gbpec', 'counsellor_msg'].forEach((_ele) => {
-                    $(`#${_ele}`).html(data.res[`${_ele}`])
-                });
-
-                if(data.res.counsellor_pic_link)
-                    $("#counsellor_pic_link").attr("src",`${data.res.counsellor_pic_link}`);                
-            }            
-        });
 
         $.getJSON("https://ieeegbpec.000webhostapp.com/api/events/10", (data) => {            
             if (data.succ) {
@@ -318,6 +307,19 @@
                 })
             }
         });
+
+        $.getJSON("https://ieeegbpec.000webhostapp.com/api/home", (data) => {            
+            console.log(data)
+            if (data.succ){
+                ['ieee', 'ieee_gbpec', 'chapter_wie', 'chapter_ieee_gbpec', 'counsellor_msg'].forEach((_ele) => {
+                    $(`#${_ele}`).html(data.res[`${_ele}`])
+                });
+
+                if(data.res.counsellor_pic_link)
+                    $("#counsellor_pic_link").attr("src",`${data.res.counsellor_pic_link}`);                
+            }            
+        });
+       
     })
 </script>
   </body>
