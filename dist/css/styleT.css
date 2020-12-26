@@ -13,8 +13,9 @@
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     background: url("../assets/images/dummy.jpg") no-repeat;
     background-size: auto;
-    height: 150px;
-    width: 150px;
+    height: 150px !important;
+    width: 150px !important;
+    object-fit: cover;
     top: -80px;
     left: 25px;
 }
