@@ -2,9 +2,9 @@ $('.header__toggler').on('click',function(){
     $('.header__nav').toggleClass('hide_nav');
 });
 
-$('#event').on('click',function(){
-    $('.event_card').toggleClass('show_event');
-});
+// $('#event').on('click',function(){
+//     $('.event_card').toggleClass('show_event');
+// });
 
 window.onscroll = function() {myFunction()};
 var header__icons = document.querySelector('.header__icons');

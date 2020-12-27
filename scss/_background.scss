@@ -1,5 +1,5 @@
 #background_section {
-  height: 80vh;
+  height: 100vh;
   background: url("../assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media-sm {
+    height: 79vh;
+  }
 }
 
 .background {
